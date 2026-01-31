@@ -1,5 +1,30 @@
 // ========== Library Data Array ==========
-let myLibrary = [];
+let myLibrary = [
+    {
+        id: crypto.randomUUID(),
+        title: 'The Hobbit',
+        author: 'J.R.R. Tolkien',
+        year: 1937,
+        pages: 310,
+        read: true
+    },
+    {
+        id: crypto.randomUUID(),
+        title: 'The Lord of the Rings',
+        author: 'J.R.R. Tolkien',
+        year: 1954,
+        pages: 1178,
+        read: true
+    },
+    {
+        id: crypto.randomUUID(),
+        title: 'The Great Gatsby',
+        author: 'F. Scott Fitzgerald',
+        year: 1925,
+        pages: 218,
+        read: false
+    } 
+];
 
 // Functional book creation
 const createBook = (title, author, year, pages, read) => ({
@@ -116,7 +141,13 @@ function saveLibrary() {
 
 function loadLibrary() {
     const libraryData = localStorage.getItem('myLibrary');
-    if (libraryData) myLibrary = JSON.parse(libraryData);
+
+    if (libraryData) {
+        myLibrary = JSON.parse(libraryData);
+    } else {
+        saveLibrary(); // save your static books on first load
+    }
+
     displayLibrary();
 }
 
