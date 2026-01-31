@@ -57,7 +57,7 @@ button {
     border: none;
     background: none;
 
-    color: var(--modal--subtext);
+    color: var(--modal-btn--text);
 }
 
 h1, h2, h3{
