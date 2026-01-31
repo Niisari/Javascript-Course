@@ -71,6 +71,11 @@ input {
     border-radius: 0.25rem;
 }
 
+input:focus {
+    outline: none;
+    border-color: var(--main-heading);
+}
+
 label, 
 input[type="checkbox"] {
     display: grid;

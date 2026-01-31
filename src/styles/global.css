@@ -46,6 +46,10 @@ body::before {
     color: var(--modal-btn--text);
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
+
+#openModal:hover {
+    background-color: var(--modal--subtext);
+}
 /* Add Book Modal Menu */
 .modal {
     display: none;
@@ -106,6 +110,10 @@ body::before {
         background-color: var(--modal-bg);
         color: var(--modal-btn--text);
         box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .submit__btn:hover {
+        background-color: var(--main-heading);
     }
 
     .modal__btn--title {
@@ -171,5 +179,15 @@ body::before {
             color: var(--modal-btn--text);
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
+
+        .edit-btn:hover,
+        .delete-btn:hover {
+            background-color: var(--modal--subtext);
+        }
+    }
+
+    .book:hover {
+        transform: scale(1.02);
+        transition: transform 0.2s;
     }
 }
