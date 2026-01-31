@@ -146,11 +146,11 @@ body::before {
         .edit-btn,
         .delete-btn {
             padding: 0.4rem 0.8rem;
-            font-size: 1rem;
+            font-size: 0.9rem;
             width: 100%;
 
             border-radius: 0.5rem;
-            background-color: var(--modal-bg);
+            background-color: var(--card-btn-bg);
             color: var(--modal-btn--text);
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
