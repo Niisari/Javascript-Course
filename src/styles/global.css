@@ -77,10 +77,10 @@ body::before {
         padding: 3rem 2rem 2rem;
         width: 20rem;
 
-        background: url('../assets/images/modal-bg.jpg') no-repeat ; /* semi-opaque white */
+        background: url('../assets/images/modal-bg.jpg') no-repeat; 
         background-size: cover;
         background-position: center top;
-        border-radius: 12px;    /* rounded corners */
+        border-radius: 12px;    
 
 
         display: flex;
@@ -137,9 +137,8 @@ body::before {
 /* Books Library */
 #library {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     gap: 1rem;
-
     width: 100%;
     /* Book Cards */
     .book {
