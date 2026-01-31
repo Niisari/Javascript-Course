@@ -10,9 +10,27 @@ body {
     min-height: 100svh;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
 .main__title {
-    color: burlywood;
+    color: var(--main-heading);
     margin: 1rem 0;
+}
+
+#openModal {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    border-radius: 5px;
+    background-color: var(--modal-bg);
+    color: var(--modal-text);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .modal {
