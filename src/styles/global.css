@@ -20,7 +20,7 @@ body::before {
 
 .main__title {
     color: var(--main-heading);
-    margin: 1rem 0;
+    margin: 1rem 0 0;
 }
 
 #openModal {
@@ -35,6 +35,10 @@ body::before {
 
 .modal {
     display: none;
+
+    background-color: var(--modal-bg);
+    border-radius: 0.5rem;
+    padding: 0 1.5rem 1rem;
 }
 
 .modal__content {
@@ -42,9 +46,9 @@ body::before {
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--modal-bg);
-    border-radius: 0.5rem;
-    padding: 0 1.5rem 1rem;
+
+
+    position: relative;
 
     #bookForm {
         display: flex;
@@ -52,7 +56,7 @@ body::before {
         align-items: center;
 
         width: 80%;
-        gap: 0.75rem;
+        gap: 1rem;
 
         .modal__btn--read {
             display: flex;
@@ -60,6 +64,12 @@ body::before {
             justify-content: space-between;
         }
     }
+
+    .close__btn {
+        align-self: flex-end;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }   
 }
 
 .modal__btn--title,
