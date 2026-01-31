@@ -70,6 +70,22 @@ input {
     border-radius: 0.25rem;
 }
 
+label, 
+input[type="checkbox"] {
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+
+    width: 1em;
+    height: 1em;
+}
+
 h1, h2, h3{
     font-weight: 600;
 }
