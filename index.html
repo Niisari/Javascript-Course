@@ -18,14 +18,14 @@
     <div class="modal" id="modal">
         <div class="modal__content">
         <button class="close" id="closeModal">&times;</button>
-        <h2>Add Book</h2>
+        <h2 class="modal__btn--title">Add Book</h2>
 
         <form id="bookForm" prevent-default="true">
             <input required placeholder="Title" id="title">
             <input required placeholder="Author" id="author">
             <input required type="number" placeholder="Year" id="year">
 
-            <label>
+            <label for="read" id="readLabel">
             Read
             <input type="checkbox" id="read">
             </label>
