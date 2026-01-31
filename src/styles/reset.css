@@ -40,10 +40,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-image: url('../assets/images/old-library-bg.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100svh;
 }
 
 button {

@@ -1,3 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    background-image: url('../assets/images/old-library-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+
+.main__title {
+    color: burlywood;
+    margin: 1rem 0;
+}
+
 .modal {
     display: none;
 }
